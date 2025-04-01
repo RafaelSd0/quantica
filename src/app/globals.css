@@ -1,6 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+  --font-barlow-thin: "Barlow", sans-serif;
+}
+@theme {
+  --font-titillium-web: "Titillium Web", sans-serif;
+}
 
 html,body {
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3{
+  @apply font-barlow-thin;
+}
+p, a, button{
+  @apply font-titillium-web;
+}
+
+h1{
+  @apply font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+}
+
+h2{
+  @apply font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
+}
+
+h3{
+  @apply font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+}
+
+p, a, button{
+  @apply text-base md:text-lg
 }
