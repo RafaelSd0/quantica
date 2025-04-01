@@ -1,4 +1,4 @@
-import Qubit from "../components/qubit";
+import Qubit from "../components/experiments/qubit";
 
 export default function Home() {
   return (
