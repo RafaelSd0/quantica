@@ -9,9 +9,18 @@
   --font-titillium-web: "Titillium Web", sans-serif;
 }
 
+@theme {
+  --color-verde-600: #82E8BC;
+  --color-verde-900: #449D77;
+  --color-coal: #1B1B1B;
+  --color-branco: #F2F2F2;
+}
+
 html,body {
   margin: 0;
   padding: 0;
+  background-color: #F2F2F2;
+  color: #1B1B1B;
 }
 
 h1, h2, h3{
