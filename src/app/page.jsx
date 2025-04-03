@@ -40,7 +40,7 @@ export default function page() {
             <h3>Superposição e Medição com Cartões</h3>
             <div>
               <p>Este experimento mostra que um qubit pode estar em um estado de superposição, sendo 0 e 1 ao mesmo tempo até que uma medição seja feita.</p>
-              <Link href={"/"} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl">
+              <Link href={"/experimento/qubit"} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl">
                 Ver Projeto <GoArrowUpRight size={30} />
               </Link>
             </div>  
