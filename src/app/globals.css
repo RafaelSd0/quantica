@@ -45,3 +45,13 @@ h3{
 p, a, button{
   @apply text-base md:text-lg
 }
+
+/*home*/
+
+.card{
+  @apply lg:w-[500px] md:w-[400px] w-[300px] space-y-3 py-2 p-5 bg-verde-900 text-branco rounded-2xl
+}
+
+.card div{
+  @apply flex flex-col items-center gap-3
+}
