@@ -5,14 +5,14 @@ import { GoArrowUpRight } from "react-icons/go";
 export default function page() {
   return (
     <main className="bg-verde-600" >
-      <section id="Hero" className=" flex flex-col-reverse xl:flex-row items-center justify-center xl:justify-between h-[800px] xl:px-[10%] lg:px-[5%] md:px-[5%] px-[3%] md:rounded-b-[150px] rounded-b-[60px] bg-branco ">
+      <section id="Hero" className=" flex flex-col-reverse xl:flex-row items-center justify-center xl:justify-between h-[800px] xl:px-[10%] lg:px-[5%]  px-[3%] md:rounded-b-[150px] rounded-b-[60px] bg-branco ">
         <div className="xl:text-left text-center md:w-4/5">
           <h1>Aprenda <span className=" text-verde-900 ">Física Quântica e Computação Quântica</span> com Projetos</h1>
           <p className="pt-3">Explore conceitos fascinantes e aprenda na prática com projetos interativos.</p>
         </div>
         <Image src={"/quântica.svg"} width={300} height={300} alt="quântica" className=" 2xl:min-w-[500px] xl:min-w-[400px] lg:min-w-[600px] md:min-w-[500px] "  />
       </section>
-      <section id="About" className="lg:text-center md:space-y-5 space-y-3 md:h-[900px] h-[800px] flex flex-col xl:items-center justify-center  xl:px-[10%] lg:px-[5%] md:px-[5%] px-[3%] md:text-center ">
+      <section id="About" className="lg:text-center md:space-y-5 space-y-3 md:h-[900px] h-[800px] flex flex-col xl:items-center justify-center  xl:px-[10%] lg:px-[5%]  px-[3%] md:text-center ">
         <div className="md:space-y-5 space-y-3  ">
         <h2>O que é Quântica?</h2>
         <p className="xl:w-2/5 md:w-4/5 md:mx-auto">A quântica que rege a Computação e a Física se refere à Mecânica Quântica, uma teoria fundamental da física que descreve o comportamento da matéria e da energia em escalas extremamente pequenas, como átomos e partículas subatômicas.</p>
@@ -28,7 +28,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="bg-branco xl:px-[10%] lg:px-[5%] md:px-[5%] px-[3%] space-y-5 pb-20">
+      <section className="bg-branco xl:px-[10%] lg:px-[5%]  px-[3%] space-y-5 pb-20">
         <h2 className="pt-5">Projetos Física Quântica</h2>
         <div>
 
