@@ -28,7 +28,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="bg-branco xl:px-[10%] lg:px-[5%]  px-[3%] space-y-5 pb-20">
+      <section className="bg-branco xl:px-[10%] lg:px-[5%] px-[3%] space-y-5 pb-20">
         <h2 className="pt-5">Projetos Física Quântica</h2>
         <div>
 
