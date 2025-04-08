@@ -55,3 +55,4 @@ p, a, button{
 .card div{
   @apply flex flex-col items-center gap-3
 }
+

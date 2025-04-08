@@ -29,7 +29,7 @@ export default function ExperimentPage() {
         </div>
       </div>
       <div className="bg-verde-600 xl:px-[10%] lg:px-[5%] px-[3%] space-y-5 ">
-        <h2>Faça você Mesmo</h2>
+        <h2 className="pt-5">Faça você Mesmo</h2>
         <p className="w-1/2">{experiment.objective}</p>
         <h2>Materiais Necessários</h2>
         <ul className="w-1/2 space-y-5">
@@ -44,7 +44,7 @@ export default function ExperimentPage() {
           ))}
         </ul>
         <h2>Procedimento</h2>
-        <ul className="w-1/2 space-y-5">
+        <ul className="w-1/2 space-y-5 pb-5">
           { experiment.procedure.map( (item, index) => (
             <li key={index}>{item}</li>
           ))}
