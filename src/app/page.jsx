@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
+import Card from "@/components/card";
 
 export default function page() {
   return (
-    <main className="bg-verde-600" >
+    <main className="bg-verde-600 pt-15" >
       <section id="Hero" className=" flex flex-col-reverse xl:flex-row items-center justify-center xl:justify-between h-[800px] xl:px-[10%] lg:px-[5%]  px-[3%] md:rounded-b-[150px] rounded-b-[60px] bg-branco ">
         <div className="xl:text-left text-center md:w-4/5">
           <h1>Aprenda <span className=" text-verde-900 ">Física Quântica e Computação Quântica</span> com Projetos</h1>
@@ -30,52 +31,22 @@ export default function page() {
       </section>
       <section className="bg-branco xl:px-[10%] lg:px-[5%] px-[3%] space-y-5 pb-20">
         <h2 className="pt-5">Projetos Física Quântica</h2>
-        <div>
-
+        <div className="fill ">
+          <Card title={'Radiação de Corpo Negro'} link={'/experimento/radiacao'}  />
+          <Card title={'Dualidade Onda-Partícula'} link={'/experimento/dualidade'}  />
+          <Card title={'Efeito Fotoelétrico'} link={'/experimento/fotoeletrico'}  />
+          <Card title={'Decaimento Radioativo com Dados'} link={'/experimento/radioativo'}  />
+          <Card title={'Saltos Quânticos com Bolinhas'} link={'/experimento/saltos'}  />
+          <Card title={'Princípio da Incerteza com Caixa e Moeda'} link={'/experimento/incerteza'}  />
+          <Card title={'Interferência com Laser e CD'} link={'/experimento/interferencia'}/>
         </div>
         <h2>Projetos Computação Quântica</h2>
-        <div className="grid grid-flow-col gap-5 overflow-scroll ">
-          
-          <div className="card" >
-            <h3>Superposição e Medição com Cartões</h3>
-            <div>
-              <p>Este experimento mostra que um qubit pode estar em um estado de superposição, sendo 0 e 1 ao mesmo tempo até que uma medição seja feita.</p>
-              <Link href={"/experimento/qubit"} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl">
-                Ver Projeto <GoArrowUpRight size={30} />
-              </Link>
-            </div>  
-          </div>
-
-          <div className="card" >
-            <h3>Superposição e Medição com Cartões</h3>
-            <div>
-              <p>Este experimento mostra que um qubit pode estar em um estado de superposição, sendo 0 e 1 ao mesmo tempo até que uma medição seja feita.</p>
-              <Link href={"/"} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl">
-                Ver Projeto <GoArrowUpRight size={30} />
-              </Link>
-            </div>  
-          </div>
-
-          <div className="card" >
-            <h3>Superposição e Medição com Cartões</h3>
-            <div>
-              <p>Este experimento mostra que um qubit pode estar em um estado de superposição, sendo 0 e 1 ao mesmo tempo até que uma medição seja feita.</p>
-              <Link href={"/"} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl">
-                Ver Projeto <GoArrowUpRight size={30} />
-              </Link>
-            </div>  
-          </div>
-
-          <div className="card" >
-            <h3>Superposição e Medição com Cartões</h3>
-            <div>
-              <p>Este experimento mostra que um qubit pode estar em um estado de superposição, sendo 0 e 1 ao mesmo tempo até que uma medição seja feita.</p>
-              <Link href={"/"} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl">
-                Ver Projeto <GoArrowUpRight size={30} />
-              </Link>
-            </div>  
-          </div>
-        
+        <div className="fill ">    
+          <Card title={'Superposição e Medição com Cartões'} link={'/experimento/qubit'}  />
+          <Card title={'Emaranhamento com Cartas Iguais'} link={'/experimento/cartas'}  />
+          <Card title={'Portas Lógicas Quânticas com Alunos'} link={'/experimento/portas'}  />
+          <Card title={'Interferência com Caminhos de Papel'} link={'/experimento/caminhos'}  />
+          <Card title={'Busca com Oráculo (Grover Simplificado)'} link={'/experimento/busca'}  />
         </div>
       </section>
     </main>

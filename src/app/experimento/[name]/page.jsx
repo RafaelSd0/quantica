@@ -15,7 +15,7 @@ export default function ExperimentPage() {
   }
 
   return (
-    <div>
+    <div className="pt-15">
       <div className="xl:px-[10%] lg:px-[5%] px-[3%] ">
         <h1 className="w-3/5 pt-5">{experiment.title}</h1>
         <span>{experiment.sub}</span>

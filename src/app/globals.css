@@ -56,3 +56,6 @@ p, a, button{
   @apply flex flex-col items-center gap-3
 }
 
+.fill{
+  @apply grid grid-flow-col gap-5 overflow-x-scroll py-3 
+}
