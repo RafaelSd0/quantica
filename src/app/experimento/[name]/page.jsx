@@ -38,11 +38,11 @@ export default function ExperimentPage() {
       <div className="xl:px-[10%] lg:px-[5%] px-[3%] ">
         <h1 className="lg:w-3/5  pt-5 lg:text-left">{experiment.title}</h1>
         <span >{experiment.sub}</span>
-        <div className=" flex justify-between items-center  py-5 lg:flex-row-reverse flex-col space-y-5 lg:space-y-0">
+        <div className=" flex justify-around items-center  py-5 lg:flex-row-reverse flex-col space-y-5 lg:space-y-0">
           <img src={experiment.image1} alt="image1" className=" xl:max-w-[500px] md:max-w-[450px] lg:max-w-[350px] max-w-[350px] rounded-2xl "/>
           <p className="lg:w-3/6 w-5/6">{experiment.text1}</p>
         </div>
-        <div className=" flex justify-between items-center py-5 lg:flex-row flex-col space-y-5 lg:space-y-0 ">
+        <div className=" flex justify-around items-center py-5 lg:flex-row flex-col space-y-5 lg:space-y-0 ">
           <img src={experiment.image2} alt="image2" className=" xl:max-w-[500px] md:max-w-[450px] lg:max-w-[350px] max-w-[350px] rounded-2xl " />
           <p className="lg:w-3/6 w-5/6" >{experiment.text2}</p>
         </div>
