@@ -21,10 +21,8 @@ export default function ExperimentPage() {
 
   if (!mounted) {
     return (
-      <div className="p-4 space-y-4 animate-pulse">
-        <div className="h-6 bg-gray-300 rounded w-2/3"></div>
-        <div className="h-4 bg-gray-300 rounded w-1/3"></div>
-        <div className="h-64 bg-gray-300 rounded w-full"></div>
+      <div className="p-4 space-y-4 animate-pulse pt-25 flex items-center justify-center">
+        Carregando...
       </div>
     );
   }
