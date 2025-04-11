@@ -6,7 +6,7 @@ const Card = ({ title, link }) => {
     <div className="card">
       <h3>{title}</h3>
       <div>
-        <Link href={link} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl">
+        <Link href={link} className="flex items-center py-2 px-3 bg-verde-600 text-coal rounded-xl hover:bg-green-300/50 transition-normal duration-[650ms]">
           Ver Projeto <GoArrowUpRight size={30} />
         </Link>
       </div>  
