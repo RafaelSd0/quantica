@@ -43,7 +43,7 @@ const header = () => {
       </header>
       
       <div className="z-0">
-        <div  className={`transition-all duration-500 overflow-hidden origin-top transform 
+        <div  className={`transition-transform duration-500 overflow-hidden origin-top transform 
           ${physic ? 'opacity-100 scale-y-100 max-h-[800px] pointer-events-auto' : ' scale-y-0 max-h-0 pointer-events-none'}
           flex justify-evenly bg-verde-900 items-center text-white flex-col`}> 
           <Link href={'/experimento/radiacao'} onClick={() => setPhysic(false)} className=" hover:bg-green-300/50 transition-normal duration-[650ms] w-full text-center py-4" >Radiação de Corpo Negro</Link>
@@ -55,7 +55,7 @@ const header = () => {
           <Link href={'/experimento/radioativo'} onClick={() => setPhysic(false)} className=" hover:bg-green-300/50 transition-normal duration-[650ms] w-full text-center py-4"> Decaimento Radioativo com Dados </Link>
         </div> 
 
-        <div className={`transition-all duration-500 overflow-hidden origin-top transform 
+        <div className={`transition-transform duration-500 overflow-hidden origin-top transform 
           ${computation ? 'opacity-100 scale-y-100 max-h-[800px] pointer-events-auto' : ' scale-y-0 max-h-0 pointer-events-none'}
           flex justify-evenly bg-verde-900 items-center text-white flex-col`} > 
           <Link href={'/experimento/qubit'} onClick={() => setComputation(false)} className=" hover:bg-green-300/50 transition-normal duration-[650ms] w-full text-center py-4">Superposição e Medição com Cartões</Link>
