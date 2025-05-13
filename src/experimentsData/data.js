@@ -1,7 +1,4 @@
-import { create } from "zustand";
-
-export const useDataStore = create(() => ({
-  experiments: [
+export const experiments = [
     {
       name: "qubit",
       title: "Superposição e Medição com Cartões",
@@ -87,8 +84,8 @@ export const useDataStore = create(() => ({
       sub: '“A luz estava confusa.”',
       text1: 'Às vezes se comportava como uma onda — espalhava-se, dobrava as esquinas, desenhava franjas de sombra e brilho como se fosse seda flutuando no ar. Outras vezes, parecia feita de pequenos grãos, pontinhos de energia saltando como pulgas elétricas, tocando a matéria e sumindo como se nunca tivessem estado ali. Foi esse comportamento inquieto que deixou os cientistas desconfiados. Um dia, Thomas Young armou um teatro de sombras com duas fendas em uma placa opaca e um feixe de luz por trás. Esperava duas manchas, como seria de se esperar de boas e obedientes partículas. Mas a luz, vaidosa, fez um espetáculo: desenhou franjas de interferência, como se tivesse vindo de todos os lugares ao mesmo tempo.',
       text2: 'E então veio a pergunta que ainda nos ronda: o que é, afinal, a luz? Uma onda? Uma partícula? Um truque de mágica? A resposta — ou ao menos o encantamento — pode começar com um pedaço de papel alumínio, um furo feito com alfinete e uma lanterna comum. Simples assim. Porque, como tudo na física quântica, é no ordinário que o extraordinário se revela.',
-      image1: "/",
-      image2: "/",  
+      image1: "/dualidade1.png",
+      image2: "/dualidade2.png",  
       objective: 'Demonstrar, de forma acessível, o conceito de dualidade onda-partícula da luz por meio de uma experiência prática com lanterna, orifícios e filtros, ajudando os alunos a compreenderem que a luz pode se comportar como partícula e como onda, dependendo da situação.',
       materials: ['Lanterna de LED ou laser pointer de baixa potência', 'Papel alumínio', 'Agulha ou alfinete', 'Celofane colorido (filtros vermelho, azul, verde)', 'Papel branco ou parede clara', 'Fita adesiva', 'Ambiente escuro'],
       montage: ['Faça um pequeno furo com uma agulha no centro de um pedaço de papel alumínio.', 'Fixe esse papel na frente da lanterna, usando fita adesiva.', 'Prepare os filtros coloridos de celofane para encaixar entre a lanterna e o furo (um de cada vez).', 'Posicione uma parede ou papel branco a cerca de 1 metro de distância para projeção da luz.'],
@@ -160,5 +157,4 @@ export const useDataStore = create(() => ({
       montage: ['Separe todos os dados em um recipiente.', 'Defina a “condição de decaimento”: por exemplo, qualquer dado que cair com o número 1 “decaem”.', 'Prepare um espaço para anotar quantos dados sobram após cada rodada.'],
       procedure: ['Agite os dados e lance todos ao mesmo tempo.', 'Remova os dados que “decaíram” (ex: os que saíram com o número 1).', 'Anote quantos dados restaram.', 'Repita o processo até que todos os dados tenham decaído.', 'Plote um gráfico com o número de dados restantes por rodada.']
     }
-  ]
-}));
+  ];

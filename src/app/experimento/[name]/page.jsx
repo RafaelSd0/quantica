@@ -1,37 +1,12 @@
-"use client"
-import { useParams } from "next/navigation";
-import { useDataStore } from "@/experimentsData/data";
-import { useEffect, useState } from "react";
+import { experiments } from "@/experimentsData/data";
 
-
-export default function ExperimentPage() {
-  /*SSR hydration fix*/
-  const [mounted, setMounted] = useState(false);
-
-  const params = useParams();
-  const name = params?.name;
-  const experiments = useDataStore((state) => state.experiments);
-
+export default async function ExperimentPage({params}) {
+  const { name } = await params
   const experiment = experiments.find((exp) => exp.name === name);
-
-  /*SSR hydration fix*/
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return (
-      <div className="p-4 space-y-4 animate-pulse pt-25 flex items-center justify-center">
-        Carregando...
-      </div>
-    );
-  }
 
   if (!experiment) {
     return <h1>Experimento não encontrado</h1>;
   }
-
-
 
   return (
     <div className="pt-15">

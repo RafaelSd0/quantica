@@ -42,7 +42,7 @@ const header = () => {
         </div>
       </header>
       
-      <div className="z-0">
+      
         <div  className={`transition-transform duration-500 overflow-hidden origin-top transform 
           ${physic ? 'opacity-100 scale-y-100 max-h-[800px] pointer-events-auto' : ' scale-y-0 max-h-0 pointer-events-none'}
           flex justify-evenly bg-verde-900 items-center text-white flex-col`}> 
@@ -64,7 +64,7 @@ const header = () => {
           <Link href={'/experimento/caminhos'} onClick={() => setComputation(false)} className=" hover:bg-green-300/50 transition-normal duration-[650ms] w-full text-center py-4">Interferência com Caminhos de Papel</Link>
           <Link href={'/experimento/busca'} onClick={() => setComputation(false)} className=" hover:bg-green-300/50 transition-normal duration-[650ms] w-full text-center py-4">Busca com Oráculo (Grover Simplificado)</Link>
         </div> 
-      </div>
+      
     </div>
   );
 };
