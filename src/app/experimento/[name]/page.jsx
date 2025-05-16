@@ -14,11 +14,25 @@ export default async function ExperimentPage({params}) {
         <h1 className="lg:w-3/5  pt-5 lg:text-left">{experiment.title}</h1>
         <span >{experiment.sub}</span>
         <div className=" flex justify-around items-center  py-5 lg:flex-row-reverse flex-col space-y-5 lg:space-y-0">
-          <img src={experiment.image1} alt="image1" className=" xl:max-w-[500px] md:max-w-[450px] lg:max-w-[350px] max-w-[350px] rounded-2xl "/>
+          <div className="overflow-hidden xl:w-[500px] md:w-[450px] lg:w-[350px] w-[350px] max-h-[500px] rounded-2xl flex items-center justify-center  ">
+            <img
+              src={experiment.image1}
+              alt="Exemplo"
+              className="w-full h-full object-cover block"
+              loading="lazy"
+            />
+          </div>
           <p className="lg:w-3/6 w-5/6">{experiment.text1}</p>
         </div>
         <div className=" flex justify-around items-center py-5 lg:flex-row flex-col space-y-5 lg:space-y-0 ">
-          <img src={experiment.image2} alt="image2" className=" xl:max-w-[500px] md:max-w-[450px] lg:max-w-[350px] max-w-[350px] rounded-2xl " />
+          <div className="overflow-hidden xl:w-[500px] md:w-[450px] lg:w-[350px] w-[350px] max-h-[500px] rounded-2xl flex items-center justify-center ">
+            <img
+              src={experiment.image2}
+              alt="Exemplo"
+              className="w-full h-full object-cover block"
+              loading="lazy"
+            />
+          </div>
           <p className="lg:w-3/6 w-5/6" >{experiment.text2}</p>
         </div>
       </div>
