@@ -35,10 +35,10 @@ const header = () => {
   return (
     <div className="w-full fixed top-0 font-bold" ref={headerRef}>
       <header className="  flex justify-between items-center py-1.5 bg-verde-600 xl:px-[10%] lg:px-[5%] px-[3%] border-b-2 border-coal ">
-        <Link href={'/'} className=" font-bold font-titillium-web cursor-pointer hover:shadow-md rounded-2xl p-2 "><span className="text-2xl">Mundo Quântico</span></Link>
-        <div className=" space-x-5 z-10   ">
-          <button onClick={showPhysic} className="p-2 cursor-pointer hover:shadow-md rounded-2xl " > Física </button>
-          <button onClick={showComputation} className="p-2 cursor-pointer hover:shadow-md rounded-2xl" > Computação </button>
+        <Link href={'/'} className=" font-bold font-titillium-web cursor-pointer hover:shadow-md rounded-2xl p-2 "><span className="md:text-2xl text-xl ">Mundo Quântico</span></Link>
+        <div className="  md:space-x-5 z-10  ">
+          <button onClick={showPhysic} className=" p-2 cursor-pointer hover:shadow-md rounded-2xl " > Física </button>
+          <button onClick={showComputation} className=" p-2 cursor-pointer hover:shadow-md rounded-2xl" > Computação </button>
         </div>
       </header>
       
